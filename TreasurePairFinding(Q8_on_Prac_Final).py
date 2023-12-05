@@ -27,5 +27,5 @@ mod = int(input("Enter modulus: "))
 findTreasurePair(factor1,factor2,mod)
 
 """
-Alternatively, you can delete lines 21-23 and hardcode factors and mods for line 25
+Alternatively, you can delete lines 23-25 and hardcode factors and mods for line 27
 """
