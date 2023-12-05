@@ -35,7 +35,7 @@ def findMatches(theshiftedarrays, thenonshiftedarray):
 
 def findKeyLength(arrayofmatches):
     maxvalue = arrayofmatches.index(max(arrayofmatches)) # Gets the index of the maximum value in the arrayofmatches
-    return maxvalue + 9
+    return maxvalue + 9 #minimum key length is 9 for PEX 2, IF MINIMUM KEY LENGTH IS DIFFERENT, CHANGE THE 9
     
 def splitLines(keyLength, originalarray):
     bins = [] # initializes list to hold all of the "bins" of letters
