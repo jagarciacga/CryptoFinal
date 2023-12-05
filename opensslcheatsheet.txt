@@ -1,0 +1,8 @@
+<will update more later>
+
+openssl: issues list of possible ciphers to use
+openssl rsa -help: issues help message for openssl using rsa
+openssl rsa -pubin -in <keyfile.pem> -text: view public key details
+openssl req -help: help message for certificate signing/creation
+openssl req -new -in <keyfile.pem> -out req.pem: creates certificate request using a keyfile
+openssl x509 -key <keyfile.pem> -req -in req.pem -out cert.pem: signs certificate request using a keyfile
