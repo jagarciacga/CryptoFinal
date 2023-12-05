@@ -1,3 +1,5 @@
+NOTE: ANYTHING IN <BRACKETS> SIGNIFY VARIABLES OR TEXT FILES THAT CAN BE CHANGED DEPENDING ON SITUATION
+
 Common -m <numbers>
   0: md5
   100: sha1
@@ -11,8 +13,9 @@ Attack Types; -a <number>
     hashcat -m <hashtype> -a 1 <hash.txt> <rockyou.txt> <wifi_passwds.txt>
   3: Mask Attack
     Character sets: ?l- lowercase letter, ?u- uppercase letter, ?d- number, ?s- symbol
-    hashcat -m <hashtype> -a 3 <hash.txt> ?l?l?s?s?u?u
-      Above command will bruteforce passwords with 2 lowercase, 2 symbols, and 2 uppercase
+      hashcat -m <hashtype> -a 3 <hash.txt> ?l?l?s?s?u?u
+        Above command will bruteforce passwords with 2 lowercase, 2 symbols, and 2 uppercase
   6: Dictionary+Mask attack (example, password from rockyou with random symbol appended to end)
+      hashcat -m <hashtype> -a 6 <hash.txt> <rockyou.txt> ?s
   7: Mask+Dictionary attack (example, password with random symbol and then a password from rockyou)
 
