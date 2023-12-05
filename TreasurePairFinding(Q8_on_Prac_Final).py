@@ -18,7 +18,7 @@ def findTreasurePair(fac1,fac2,n):
         elif (fac2 - n) == fac1 or (fac2 - n) == (fac1 * -1):
             print(f"No treasure pair for {fac1} and {fac2} mod {n}, {fac1} = + or - {fac2} mod {n}")
         else:
-            print(math.gcd(fac1-fac2,n)) # if treasure pair exists, find factor using gcd(x-y,n)
+            print(math.gcd(fac2-fac1,n)) # if treasure pair exists, find factor using gcd(x-y,n)
 
 factor1 = int(input("Enter first (lower) factor: "))
 factor2 = int(input("Enter second (higher) factor: "))
