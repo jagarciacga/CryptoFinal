@@ -10,7 +10,7 @@ x = []
 
 calculatedysquared = []
 calculatedx = []
-pointsnum = 1
+pointsnum = 1 #starts at 1 because of the infinity point
 
 def calcY(yval, ysquared, n):
     for y in range(n):
